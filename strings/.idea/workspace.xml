@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88c758ca-5395-4a92-8376-cf4f1ab3be4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ByteShortIntLong/out/production/ByteShortIntLong/com/chezearth/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FloatAndDouble/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/ByteShortInt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/ByteShortIntLong.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/out/production/ByteShortInt/com/chezearth/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteShortInt/src/com/chezearth/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteShortIntLong/src/com/chezearth/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharAndBoolean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CharAndBoolean/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharAndBoolean/char-and-boolean.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharAndBoolean/out/production/CharAndBoolean/com/chezearth/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CharAndBoolean/out/production/CharAndBoolean/com/chezearth/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharAndBoolean/src/com/chezearth/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CharAndBoolean/src/com/chezearth/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FloatAndDouble/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FloatAndDouble/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FloatAndDouble/out/production/FloatAndDouble/com/chezearth/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FloatAndDouble/out/production/FloatAndDouble/com/chezearth/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FloatAndDouble/src/com/chezearth/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FloatAndDouble/src/com/chezearth/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld/out/production/HelloWorld/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/out/production/HelloWorld/Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld/src/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/src/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chezearth/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chezearth/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/chezearth/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -72,6 +51,9 @@
       <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -117,23 +99,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25178826" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25178826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3287858" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -150,7 +132,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/chezearth/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
         </state>
       </provider>
     </entry>

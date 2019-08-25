@@ -14,6 +14,6 @@ public class Main {
         // char
 
         String myString = "This is a short string.";
-        System.out.println(myString);
+        System.out.println("myString is equal to \"" + myString + "\"");
     }
 }
