@@ -13,6 +13,12 @@ public class Main {
         char myRegSymbol = '\u00AE';
         System.out.println("Unicode Registered symbol is: " + myRegSymbol);
 
+        boolean myTrueBoolean = true;
+        boolean myFalseBoolean = false;
+        System.out.println(myTrueBoolean);
+        System.out.println(myFalseBoolean);
+
+
     }
 
 }

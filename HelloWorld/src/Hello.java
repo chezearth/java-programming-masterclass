@@ -15,5 +15,11 @@ public class Hello {
         System.out.println(myTotal);
         System.out.println(myDifference);
 
+        if(args.length > 0) {
+            System.out.println("args =" + args[0]);
+        } else {
+            System.out.println("No args!");
+        }
+
     }
 }

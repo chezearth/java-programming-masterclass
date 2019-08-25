@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ByteShortInt.iml" filepath="$PROJECT_DIR$/ByteShortInt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/strings.iml" filepath="$PROJECT_DIR$/strings.iml" />
     </modules>
   </component>
 </project>
