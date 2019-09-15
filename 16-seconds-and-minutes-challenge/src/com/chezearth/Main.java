@@ -2,6 +2,8 @@ package com.chezearth;
 
 public class Main {
 
+    private static final String INVALID_VALUE = "Invalid value";
+
     public static void main(String[] args) {
         System.out.println("Hours, minutes and seconds for 217 min 23 sec = " + getDurationString(217, 23));
         System.out.println("Hours, minutes and seconds for 217 min 65 sec = " + getDurationString(217, 65));
@@ -11,29 +13,27 @@ public class Main {
         System.out.println("Hours, minutes and seconds for -13043 sec = " + getDurationString(-13043));
     }
 
-    public static String getDurationString(int minutes, int seconds) {
+    private static String getDurationString(long minutes, long seconds) {
 
         if(minutes < 0 || seconds < 0 || seconds > 59) {
-            return "Invalid value";
+            return INVALID_VALUE;
         }
 
-        return pad((int) (minutes / 60)) + "h "
+        return pad((long) (minutes / 60)) + "h "
                 + pad(minutes % 60) + "m "
                 + pad(seconds) + "s";
     }
 
-    public static String getDurationString(int seconds) {
+    private static String getDurationString(long seconds) {
 
         if(seconds < 0) {
-            return "Invalid value";
+            return INVALID_VALUE;
         }
 
-        return pad((int) (seconds / 3600)) + "h "
-                + pad((int) ((seconds % 3600) / 60)) + "m "
-                + pad((seconds % 3600) % 60) + "s";
+        return getDurationString(seconds / 60, seconds % 60);
     }
 
-    public static String pad(int num) {
+    private static String pad(long num) {
         return num < 10 ? "0" + num : "" + num;
     }
 
