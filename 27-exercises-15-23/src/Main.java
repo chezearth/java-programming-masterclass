@@ -69,5 +69,7 @@ public class Main {
         NumberToWords.numberToWords(-12);
         System.out.println("numberToWords(0)");
         NumberToWords.numberToWords(0);
+        System.out.println("numberToWords(1682507)");
+        NumberToWords.numberToWords(1682507);
     }
 }
