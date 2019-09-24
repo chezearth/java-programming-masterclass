@@ -1,8 +1,13 @@
 package com.chezearth;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+//        ReadingUserInput.readUserInput();
+//        ReadingUserInputChallenge.readUserInput();
+        MinAndMaxInputChallenge.minAndMaxInput();
     }
+
 }
