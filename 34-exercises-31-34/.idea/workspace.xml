@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d7b5779-bcfc-4145-8f8e-c797c1db01c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../36-exercises-35-36/36-exercises-35-36.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../36-exercises-35-36/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../36-exercises-35-36/src/Cuboid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../36-exercises-35-36/src/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../36-exercises-35-36/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../36-exercises-35-36/src/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../35-inheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../35-inheritance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../35-inheritance/out/production/35-inheritance/META-INF/35-inheritance.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
