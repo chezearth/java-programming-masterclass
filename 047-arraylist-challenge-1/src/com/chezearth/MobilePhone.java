@@ -5,51 +5,95 @@ import java.util.ArrayList;
 public class MobilePhone {
     private ArrayList<Contact> contactsArr = new ArrayList<Contact>();
 
-//    private Contact findContactObject(String name) {
-//        Contact contact = new Contact(name, );
-//    }
-
-    public void addContact(String name, String phoneNumber) {
-        Contact contact = new Contact(name, phoneNumber);
-        if (!findContact(contact)) {
-            contactsArr.add(contact);
-        } else {
-            System.out.println("Contact " + name + " already exists");
+    public String addContact(String name, String phoneNumber) {
+        Contact contact = getContactByName(name);
+        if (contact == null) {
+            Contact newContact = new Contact(name, phoneNumber);
+            contactsArr.add(newContact);
+            return makeContactDetails(newContact);
         }
+
+        return null;
     }
 
-//    public void modifyContact(String name, String newName, String newNumber) {
-////        boolean contactIndex = findContact(name);
-//        Contact contact = new Contact(name)
-//
-//        if (findContact()) {
-//            Contact contact = contactsArr.get(contactIndex);
-//
-//            if (newName != null) {
-//                contact.setName(newName);
-//            }
-//
-//            if (newNumber != null) {
-//                contact.setPhoneNumber(newNumber);
-//            }
-//
-//        }
-//    }
+    public String  modifyContact(String name, String newName, String newNumber) {
+        Contact contact = getContactByName(name);
 
-//    public void removeContact(String name) {
-//        int contactIndex = findContact(name);
-//
-//        if (contactIndex >= 0) {
-//            contactsArr.remove(contactIndex);
-//        }
-//    }
+        if (contact != null) {
 
-    public void searchContact(String name) {
-//        contactsArr.
+            if (newName != null && newName.length() != 0) {
+                contact.setName(newName);
+            }
+
+            if (newNumber != null && newNumber.length() != 0) {
+                contact.setPhoneNumber(newNumber);
+            }
+
+            return  makeContactDetails(contact);
+        }
+
+        return null;
     }
 
-    private boolean findContact(Contact contact) {
-        return contactsArr.contains(contact);
+    public String removeContact(String name) {
+        Contact contact = getContactByName(name);
+
+        if (contact != null) {
+            contactsArr.remove(contact);
+            return  "Contact with name '" + contact.getName() + "' deleted";
+        }
+
+        return null;
+    }
+
+    public boolean checkForContact(String name) {
+        return (getContactByName(name) != null);
+    }
+
+    public String getContactDetails(String name) {
+        return makeContactDetails(getContactByName(name));
+    }
+
+    public String getAllContacts() {
+        String contactListString = "";
+
+        if (contactsArr.size() > 0) {
+
+            for (int i = 0; i < contactsArr.size(); i++) {
+                Contact contact = contactsArr.get(i);
+                contactListString = contactListString + makeContactDetails(contact) + "\n";
+            }
+
+            return contactListString.trim();
+        }
+
+        return null;
+    }
+
+    private Contact getContactByName(String name) {
+
+        for (int i = 0; i < contactsArr.size(); i++) {
+            Contact contact = contactsArr.get(i);
+
+            if (contact.getName().trim().toLowerCase().equals(name.trim().toLowerCase())) {
+                return contact;
+            }
+
+        }
+
+        return null;
+    }
+
+    private String makeContactDetails(Contact contact) {
+
+        if (contact != null) {
+            return "name: "
+                    + contact.getName()
+                    + ", phone Number: "
+                    + contact.getPhoneNumber();
+        }
+
+        return null;
     }
 
 }
