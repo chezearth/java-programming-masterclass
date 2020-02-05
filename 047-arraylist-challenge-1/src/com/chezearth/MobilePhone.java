@@ -3,11 +3,15 @@ package com.chezearth;
 import java.util.ArrayList;
 
 public class MobilePhone {
-    private ArrayList<Contact> contactsArr = new ArrayList<Contact>();
+    private ArrayList<Contact> contactsArr;
+
+    public MobilePhone() {
+        this.contactsArr = new ArrayList<>();
+    }
 
     public String addContact(String name, String phoneNumber) {
-        Contact contact = getContactByName(name);
-        if (contact == null) {
+        int index = findContact(name);
+        if (index < 0) {
             Contact newContact = new Contact(name, phoneNumber);
             contactsArr.add(newContact);
             return makeContactDetails(newContact);
@@ -17,68 +21,78 @@ public class MobilePhone {
     }
 
     public String  modifyContact(String name, String newName, String newNumber) {
-        Contact contact = getContactByName(name);
+        int index = findContact(name);
 
-        if (contact != null) {
+        if (index >= 0) {
 
-            if (newName != null && newName.length() != 0) {
-                contact.setName(newName);
+            if (newName == null || newName.length() == 0) {
+                newName = findContact(index).getName();
             }
 
-            if (newNumber != null && newNumber.length() != 0) {
-                contact.setPhoneNumber(newNumber);
+            if (newNumber == null || newNumber.length() == 0) {
+                newNumber = findContact(index).getPhoneNumber();
             }
-
-            return  makeContactDetails(contact);
+            contactsArr.set(index, findContact(index).createContact(newName, newNumber));
+            return  makeContactDetails(findContact(index));
         }
 
         return null;
     }
 
     public String removeContact(String name) {
-        Contact contact = getContactByName(name);
+        int index = findContact(name);
 
-        if (contact != null) {
-            contactsArr.remove(contact);
-            return  "Contact with name '" + contact.getName() + "' deleted";
+        if (index >= 0) {
+            contactsArr.remove(index);
+            return  "Contact with name '" + findContact(index).getName() + "' deleted";
         }
 
         return null;
     }
 
     public boolean checkForContact(String name) {
-        return (getContactByName(name) != null);
+        return (findContact(name) >= 0);
+    }
+
+    private int findContact(String name) {
+
+        for (int i = 0; i < contactsArr.size(); i++) {
+            Contact contact = findContact(i);
+
+            if (contact.getName().trim().toLowerCase().equals(name.trim().toLowerCase())) {
+                return i;
+            }
+
+        }
+
+        return -1;
+    }
+
+    private Contact findContact(int index) {
+        return contactsArr.get(index);
     }
 
     public String getContactDetails(String name) {
-        return makeContactDetails(getContactByName(name));
+        int index = findContact(name);
+
+        if (index < 0) {
+            return  null;
+        }
+
+        return makeContactDetails(findContact(index));
     }
 
     public String getAllContacts() {
-        String contactListString = "";
+        StringBuilder contactListString = new StringBuilder();
 
         if (contactsArr.size() > 0) {
 
             for (int i = 0; i < contactsArr.size(); i++) {
-                Contact contact = contactsArr.get(i);
-                contactListString = contactListString + makeContactDetails(contact) + "\n";
+                Contact contact = findContact(i);
+                contactListString.append(makeContactDetails(contact)).append("\n");
             }
 
-            return contactListString.trim();
-        }
-
-        return null;
-    }
-
-    private Contact getContactByName(String name) {
-
-        for (int i = 0; i < contactsArr.size(); i++) {
-            Contact contact = contactsArr.get(i);
-
-            if (contact.getName().trim().toLowerCase().equals(name.trim().toLowerCase())) {
-                return contact;
-            }
-
+            return contactListString.toString().trim();
         }
 
         return null;

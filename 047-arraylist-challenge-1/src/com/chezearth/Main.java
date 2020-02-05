@@ -1,6 +1,5 @@
 package com.chezearth;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -9,12 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
         boolean quit = false;
-        int choice = 0;
         printInstructions();
 
         while (!quit) {
             System.out.println("Enter your choice: ");
-            choice = scanner.nextInt();
+            int choice = scanner.nextInt();
             scanner.nextLine();
 
             switch (choice) {
@@ -61,7 +59,7 @@ public class Main {
             String result = mobilePhone.addContact(name, number);
 
             if (result != null) {
-                System.out.println("Contact added, " + result);
+                System.out.println("Contact added; " + result);
             } else {
                 System.out.println("The contact could not be added");
             }
@@ -106,7 +104,8 @@ public class Main {
     }
 
     public static void queryContacts() {
-        System.out.print("Enter contact name to search for (NOTHING returns all contacts): ");
+        System.out.print("Enter contact name to search for (press ENTER to return all contacts):" +
+                " ");
         String name = scanner.nextLine();
 
         if (name == null || name.length() == 0) {
@@ -122,7 +121,7 @@ public class Main {
             String result = mobilePhone.getContactDetails(name);
 
             if (result != null) {
-                System.out.println("Details for contact:\nname: " + result);
+                System.out.println("Details for contact:\n" + result);
             } else {
                 System.out.println(notFound(name));
             }
